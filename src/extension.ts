@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "hydranav" is now active!');
 
 	let disposable = vscode.commands.registerCommand('hydranav.helloWorld', () => {
-		vscode.window.showInformationMessage('hydra_navi activated!');
+		vscode.window.showInformationMessage('hydra_navi is activated!');
 	});
 
 	context.subscriptions.push(disposable);

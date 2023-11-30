@@ -13,7 +13,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -23,6 +25,7 @@
       }
     ]
   },
+  "publisher": "Cocoine",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
