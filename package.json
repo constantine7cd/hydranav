@@ -1,7 +1,11 @@
 {
   "name": "hydranav",
   "displayName": "hydra_navi",
-  "description": "LEAVE BLANK",
+  "description": "This extension simplifies navigation inside [Hydra](https://hydra.cc) configuration files (.yaml supported only).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/constantine7cd/hydranav"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"
@@ -9,8 +13,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
