@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/constantine7cd/hydranav"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -16,12 +16,15 @@
   "activationEvents": [
     "onLanguage:yaml"
   ],
+  "extensionDependencies": [
+    "redhat.vscode-yaml"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "hydranav.helloWorld",
-        "title": "Hello World"
+        "command": "hydranav.Activate",
+        "title": "Activate Hydra Navigation"
       }
     ]
   },

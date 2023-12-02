@@ -24,13 +24,21 @@ The `config` is a parent directory of config `datasets/mega.yaml`. The extension
 
 **NOTE!** You may use any syntax for your hydra handler: `^{}`, `cfg_parse{}`, etc., the only internal syntax `config_parent_dir:path_to_config_relative_to_parent.yaml` matters.
 
+As for now, extension supports "go to definition" for symbols such as: 
+ - class
+ - function
+ - method of the class (staticmethod or classmethod)
+ - any global variable defined inside .py script
+
+In the case nothing found, the extension tries to find either the parent script of the symbol or ```__init__.py``` of the parent folder. 
+
 ## Extension Settings
 
 Coming soon...
 
 ## Known Issues
 
-Coming soon...
+Search inside commented code. In the case code contains comments of type ```"""python comment"""``` and the symbol (class, function or variable) is mentioned inside that comment, and that comment is before symbol definition (or symbol does not exist) than the extension navigates symbol inside comment. *Note!* Extension works as expected with comments of type ```# comment```.
 
 ## Release Notes
 
